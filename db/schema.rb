@@ -10,20 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_22_164927) do
+ActiveRecord::Schema.define(version: 2021_11_22_170356) do
 
   create_table "blog1s", charset: "utf8mb3", collation: "utf8_bin", force: :cascade do |t|
     t.string "nombre"
-    t.string "descripcion"
-    t.string "text"
+    t.text "descripcion"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "mensajes", charset: "utf8mb3", collation: "utf8_bin", force: :cascade do |t|
     t.string "autor"
-    t.string "mensaje"
-    t.string "text"
+    t.text "mensaje"
     t.bigint "publicacion_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -32,8 +30,7 @@ ActiveRecord::Schema.define(version: 2021_11_22_164927) do
 
   create_table "publicacions", charset: "utf8mb3", collation: "utf8_bin", force: :cascade do |t|
     t.string "titulo"
-    t.string "contenido"
-    t.string "text"
+    t.text "contenido"
     t.bigint "blog1_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

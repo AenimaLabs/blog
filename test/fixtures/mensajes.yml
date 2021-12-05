@@ -2,12 +2,10 @@
 
 one:
   autor: MyString
-  mensaje: MyString
-  text: MyString
+  mensaje: MyText
   publicacion: one
 
 two:
   autor: MyString
-  mensaje: MyString
-  text: MyString
+  mensaje: MyText
   publicacion: two
